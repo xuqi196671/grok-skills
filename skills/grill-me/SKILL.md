@@ -1,16 +1,15 @@
 ---
 name: grill-me
-description: Relentless interview that sharpens a vague plan or design until every decision branch is settled. Use when the user says grill me, /grill-me, 拷问, 追问方案, or wants a design grilled before implementation. Stateless. Writes no files.
-license: MIT
-metadata:
-  source: mattpocock/skills
-  companion: grilling
+description: 用户喊拷问时才启动。把一件还没定清的事用中文短问拆开，问完复述结论，等用户点头再实施。Triggers include 拷问, 追问方案, grill me, /grill-me, 烤一下这个。
 ---
 
-Start a grilling session. Do not implement, write specs, or create tickets until the user confirms shared understanding.
+# 拷问入口
 
-Read and follow grilling/SKILL.md as the interview protocol.
+只有用户明确说「拷问 / 追问方案 / grill me / 烤一下」时才用。日常聊天、已经在做的任务、先复述对齐的回合，不要自己开烤。
 
-Rules for this front door
-- User-invoked. Do not start grilling unprompted.
-- Stateless. Do not write CONTEXT.md, ADRs, or other artifacts.
+启动后：
+
+1. 用一两句确认这次烤的是哪一件事，用户没反对再问。
+2. 按 grilling 的问法进行。
+3. 烤完用几条短句复述已定结论，等用户说没问题，才去做或改东西。
+4. 不写额外方案文档，除非用户要。

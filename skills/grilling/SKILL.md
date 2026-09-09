@@ -1,8 +1,19 @@
 ---
 name: grilling
-description: Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any grill trigger phrases.
+description: 拷问进行中的问法。用中文短问拆决策，一轮只问现在必须定的点，每问带倾向，答完再问下一轮。Triggers include 拷问进行中, 追问方案怎么问, grilling。
 ---
 
-Interview the user relentlessly until you reach a shared understanding. Map this as a design tree.
+# 拷问怎么问
 
-Work the tree in rounds. Ask the whole frontier in one round, then wait.
+把这件事看成一棵决策树。当前能问、且不问就会猜的，叫这一轮的点。
+
+## 每一轮
+
+- 只用中文，短。
+- 一次列出这一轮必须定的问题，编号。
+- 每个问题下面写一句你的倾向。
+- 写完停，等用户答。不要一边问一边开做。
+
+## 结束
+
+没有必须再定的点时，复述结论，问没问题就按这个。用户点头才实施。用户说停就停。
