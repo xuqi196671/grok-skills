@@ -1,14 +1,13 @@
 ---
 name: github-skill-sync
-description: Merge custom skills between local and GitHub xuqi196671/grok-skills. Union both sides. If two skills look similar but text differs, show both to the user and wait. Never restore seedance or grok-shipin. Triggers include 同步技能, 合并技能, GitHub技能仓库, 每天第一次任务.
+description: Merge Grok custom skills with GitHub xuqi196671/grok-skills as a union. Do not install skills that only fit Grok Bot. After first judgment, label bot-only or grok-only. Both-sides skills stay unlabeled. Never restore seedance or grok-shipin. Triggers include 同步技能, 合并技能, 只给Bot, 只给Grok.
 ---
 
 # 技能合并同步
 
-仓库 https://github.com/xuqi196671/grok-skills
-本地 /home/workdir/.grok/skills/
-
-目标是并集。谁多出来的就补到缺的那边，不删对方独有的。
-两边同名但正文不同，或两个名字不同但作用明显同类：停下来把两边要点发给用户，等用户决定留哪个。
-永不恢复 seedance、grok-shipin。
-不管 Grok Bot。
+仓库保留两边的技能。本地只装适合当前 Grok 的。
+只适合 Bot 的不下载到本地，第一次判断后标 audience bot。
+只适合 Grok 的标 audience grok。
+两边都能用的不标。
+不预先给所有技能贴标。
+并集，不删独有。内容冲突交用户决定。
