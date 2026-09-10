@@ -1,8 +1,6 @@
 ---
 name: character-3view
 description: 为 Grok Imagine 和后续视频做详细人物设定集。默认出密信息板加文字人设（性格、音色、口吻、视频用法），不只三视图。触发词包括三视图、角色设定图、turnaround、character sheet、正侧背、人物参考图、视频参考人设、性格音色。不要走 Codex 或别人仓库的 CLI。
-metadata:
-  audience: grok
 ---
 
 # 人物视频参考设定集（Grok）
