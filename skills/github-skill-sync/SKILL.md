@@ -1,12 +1,14 @@
 ---
 name: github-skill-sync
-description: 把本地自定义技能和 GitHub xuqi196671/grok-skills 做并集同步。只给不适合当前这一边的技能打标，适合两边的不标。推送必须用本地全文，禁止截短。永不恢复 seedance、grok-shipin。触发词包括同步技能、合并技能、只给Bot、只给Grok。
+description: >-
+  把本地自定义技能和 GitHub xuqi196671/grok-skills
+  做并集同步。只给不适合当前这一边的技能打标，适合两边的不标。推送必须用本地全文，禁止截短。永不恢复
+  seedance、grok-shipin。触发含：同步技能、合并技能。
 ---
-
 # 技能合并同步
 
 仓库 https://github.com/xuqi196671/grok-skills  
-本地 `/home/workdir/.grok/skills/`  
+Grok 本地 `/home/workdir/.grok/skills/`；Grok Bot 本地 `/home/box/agent-data/workflows/`（用技能写入）  
 只处理自定义技能。GitHub 连接器不是技能，是账号授权；本技能靠它读写仓库。
 
 永不恢复、不上传 `seedance`、`grok-shipin`。
